@@ -1,0 +1,10 @@
+<div class="data">
+    <div>Name : {{ data.lastName }}</div>
+    <div>First : {{ data.firstName }}</div>
+    <div>Age : {{ data.age }}</div>
+    <div>Genre : {{ data.gender }}</div>
+    <div>Bio : {{ data.bio }}</div>
+    <div  *ngFor="let i of data.skills">
+        <app-skill [skillData]="i"></app-skill>
+    </div>
+</div>
